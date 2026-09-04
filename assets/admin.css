@@ -1,0 +1,108 @@
+.az-notifyrules-for-woocommerce-wrap .nav-tab-wrapper {
+	margin: 20px 0;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-repeater td {
+	vertical-align: top;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+	gap: 10px 14px;
+	margin-bottom: 10px;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-grid label,
+.az-notifyrules-for-woocommerce-wrap .az-channel-fields > label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-grid input,
+.az-notifyrules-for-woocommerce-wrap .az-grid select {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-secret-control {
+	display: flex;
+	gap: 6px;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-secret-control .az-secret-input {
+	font-family: monospace;
+	min-width: 0;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-secret-control .button {
+	flex: 0 0 auto;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-condition {
+	margin-top: 8px;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-condition select {
+	min-width: 260px;
+	width: 100%;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-channel-choice {
+	display: block;
+	margin-bottom: 6px;
+}
+
+.az-notifyrules-for-woocommerce-wrap .button-link-delete {
+	display: block;
+	margin-top: 10px;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-rule-display-row td,
+.az-notifyrules-for-woocommerce-wrap .az-channel-display-row td {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-rule-status,
+.az-notifyrules-for-woocommerce-wrap .az-rule-name,
+.az-notifyrules-for-woocommerce-wrap .az-channel-status,
+.az-notifyrules-for-woocommerce-wrap .az-channel-name {
+	display: inline-block;
+	line-height: 1.5;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-rule-edit-row,
+.az-notifyrules-for-woocommerce-wrap .az-channel-edit-row {
+	background: #f6f7f7;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-rule-display-row .button-link-delete,
+.az-notifyrules-for-woocommerce-wrap .az-rule-edit-row .button-link,
+.az-notifyrules-for-woocommerce-wrap .az-channel-display-row .button-link-delete,
+.az-notifyrules-for-woocommerce-wrap .az-channel-edit-row .button-link {
+	display: inline-block;
+	margin: 0 0 0 8px;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-channel-summary > div {
+	margin-bottom: 3px;
+}
+
+.az-notifyrules-for-woocommerce-wrap .az-secret-mask {
+	font-family: monospace;
+}
+
+@media (max-width: 782px) {
+	.az-notifyrules-for-woocommerce-wrap .az-repeater,
+	.az-notifyrules-for-woocommerce-wrap .az-repeater tbody,
+	.az-notifyrules-for-woocommerce-wrap .az-repeater tr,
+	.az-notifyrules-for-woocommerce-wrap .az-repeater td {
+		display: block;
+		width: 100%;
+	}
+
+	.az-notifyrules-for-woocommerce-wrap .az-repeater thead {
+		display: none;
+	}
+}
