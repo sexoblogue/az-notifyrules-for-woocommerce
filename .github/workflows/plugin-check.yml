@@ -21,3 +21,8 @@ jobs:
         uses: wordpress/plugin-check-action@v1
         with:
           slug: az-notifyrules-for-woocommerce
+          exclude-directories: .github
+          exclude-files: .gitignore
+          # This plugin is distributed outside WordPress.org and therefore
+          # intentionally provides its own signed update metadata.
+          exclude-checks: plugin_updater
