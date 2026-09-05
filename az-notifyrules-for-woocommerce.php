@@ -1,25 +1,25 @@
 <?php
 /**
  * Plugin Name: AZ NotifyRules for WooCommerce
- * Plugin URI: https://www.zeler.fr/plugins/az-notifyrules-for-woocommerce/
+ * Plugin URI: https://code.zeler.fr/aznrwc/
  * Description: Route new WooCommerce order alerts by product or category to Pushover and additional email recipients.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: AZ
  * Author URI: https://www.zeler.fr/
  * Requires at least: 6.6
  * Requires PHP: 8.1
  * Requires Plugins: woocommerce
  * WC requires at least: 9.8
- * WC tested up to: 11.0
+ * WC tested up to: 11.1
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: az-notifyrules-for-woocommerce
- * Update URI: https://www.zeler.fr/plugins/az-notifyrules-for-woocommerce/
+ * Update URI: https://code.zeler.fr/aznrwc/
  */
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'AZ_WOO_ALERTS_VERSION', '1.0.0' );
+define( 'AZ_WOO_ALERTS_VERSION', '1.0.1' );
 define( 'AZ_WOO_ALERTS_FILE', __FILE__ );
 define( 'AZ_WOO_ALERTS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'AZ_WOO_ALERTS_URL', plugin_dir_url( __FILE__ ) );

@@ -4,7 +4,7 @@ Tags: woocommerce, pushover, order notifications, email alerts, product categori
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -122,6 +122,11 @@ Custom providers must implement the `AZ_Woo_Alerts_Channel_Provider` interface.
 
 == Changelog ==
 
+= 1.0.1 =
+
+* Moved the public download page and update service to code.zeler.fr.
+* Confirmed compatibility with WooCommerce 11.1.
+
 = 1.0.0 =
 
 * Initial public release.
@@ -130,4 +135,4 @@ Custom providers must implement the `AZ_Woo_Alerts_Channel_Provider` interface.
 
 == Updates ==
 
-This plugin is distributed independently from WordPress.org. WordPress checks https://www.zeler.fr/plugins/az-notifyrules-for-woocommerce/update.json for new versions. Update packages are downloaded over HTTPS and verified against the published SHA-256 checksum before installation.
+This plugin is distributed independently from WordPress.org. WordPress checks https://code.zeler.fr/aznrwc/update.json for new versions. Update packages are downloaded over HTTPS and verified against the published SHA-256 checksum before installation.

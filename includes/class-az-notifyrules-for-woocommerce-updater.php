@@ -9,15 +9,15 @@ defined( 'ABSPATH' ) || exit;
 
 final class AZ_NotifyRules_Updater {
 	private const SLUG = 'az-notifyrules-for-woocommerce';
-	private const UPDATE_URI = 'https://www.zeler.fr/plugins/az-notifyrules-for-woocommerce/';
-	private const METADATA_URL = 'https://www.zeler.fr/plugins/az-notifyrules-for-woocommerce/update.json';
-	private const CACHE_KEY = 'az_notifyrules_update_metadata';
+	private const UPDATE_URI = 'https://code.zeler.fr/aznrwc/';
+	private const METADATA_URL = 'https://code.zeler.fr/aznrwc/update.json';
+	private const CACHE_KEY = 'az_notifyrules_update_metadata_v2';
 
 	/**
 	 * Registers the update hooks.
 	 */
 	public static function register(): void {
-		add_filter( 'update_plugins_www.zeler.fr', array( self::class, 'filter_update' ), 10, 4 );
+		add_filter( 'update_plugins_code.zeler.fr', array( self::class, 'filter_update' ), 10, 4 );
 		add_filter( 'plugins_api', array( self::class, 'filter_plugin_information' ), 10, 3 );
 		add_filter( 'upgrader_pre_download', array( self::class, 'verify_package' ), 10, 4 );
 		add_action( 'upgrader_process_complete', array( self::class, 'clear_cache_after_update' ), 10, 2 );
@@ -219,9 +219,9 @@ final class AZ_NotifyRules_Updater {
 		$package_path   = wp_parse_url( $metadata['package'], PHP_URL_PATH );
 
 		return 'https' === $package_scheme
-			&& 'www.zeler.fr' === $package_host
+			&& 'code.zeler.fr' === $package_host
 			&& is_string( $package_path )
-			&& str_starts_with( $package_path, '/plugins/az-notifyrules-for-woocommerce/' )
+			&& str_starts_with( $package_path, '/aznrwc/' )
 			&& 1 === preg_match( '/^[0-9a-fA-F]{64}$/', $metadata['sha256'] );
 	}
 }
